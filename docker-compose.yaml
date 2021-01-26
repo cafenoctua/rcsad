@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  jupyer:
+    build: ./
+    volumes:
+      - ${PWD}/project:/work
+    ports:
+      - "8888:8888"
+      - "8000:8000"
