@@ -41,3 +41,8 @@ Add -h options after list you can see list help.
 Sort example:
 
 `kaggle competitions list --sort-by 'prize'`
+
+Show kernels list.
+```
+kaggle kernels list -s titanic
+```
