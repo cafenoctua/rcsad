@@ -4,7 +4,8 @@ services:
   jupyer:
     build: ./
     volumes:
-      - ${PWD}/project:/work
+      - ./project:/work
+      - ./kaggle.json:/root/.kaggle/kaggle.json
     ports:
       - "8888:8888"
       - "8000:8000"
