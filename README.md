@@ -46,3 +46,12 @@ Show kernels list.
 ```
 kaggle kernels list -s titanic
 ```
+
+## Push Notebook and code
+1. `kaggle kernel init -p {path}`
+2. setting `kernel-metadata.json`
+3. `kaggle kernel push -p {path}`
+
+If you want to change the output destination, change `kernel-metadata.json`.<br/>
+Note: If you change the output destination, please change the title as well. If you do not change the title, the files on kaggle will conflict.
+
