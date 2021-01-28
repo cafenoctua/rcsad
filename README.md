@@ -46,3 +46,22 @@ Show kernels list.
 ```
 kaggle kernels list -s titanic
 ```
+
+## Push Notebook and code
+1. `kaggle kernel init -p {path}`
+2. setting `kernel-metadata.json`
+3. `kaggle kernel push -p {path}`
+
+If you want to change the output destination, change `kernel-metadata.json`.<br/>
+Note: If you change the output destination, please change the title as well. If you do not change the title, the files on kaggle will conflict.
+
+# Link jupyternotebook to Colaboratory
+Install a chrome extentions that will allow you to open github hosted notebooks in colab.
+
+https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo/related
+
+And put the following html in a markdown cell at the top of the notebooks.
+```
+<a href="https://colab.research.google.com/{your notebook url}" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+```
+
