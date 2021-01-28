@@ -165,3 +165,5 @@ dmypy.json
 
 # secret key
 kaggle.json
+conn-gcs.json
+.env
