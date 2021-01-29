@@ -167,3 +167,4 @@ dmypy.json
 kaggle.json
 conn-gcs.json
 .env
+*mlruns
