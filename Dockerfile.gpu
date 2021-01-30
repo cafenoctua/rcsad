@@ -1,0 +1,4 @@
+FROM gcr.io/kaggle-gpu-images/python@sha256:01c86d6f219a3e18705cba6a0dd085e2d0aa7b015d8198e15d49f484965f9c6c
+
+ADD requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt

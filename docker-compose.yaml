@@ -2,7 +2,9 @@ version: "3"
 
 services:
   jupyer:
-    build: ./
+    build:
+      context: ./
+      dockerfile: Dockerifle.gpu
     volumes:
       - ./project:/work
       - ./kaggle.json:/root/.kaggle/kaggle.json
