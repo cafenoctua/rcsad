@@ -1,10 +1,10 @@
-version: "3"
+version: "3.8"
 
 services:
-  jupyer:
+  jupyter:
     build:
       context: ./
-      dockerfile: Dockerifle.gpu
+      dockerfile: Dockerfile.gpu
     volumes:
       - ./project:/work
       - ./kaggle.json:/root/.kaggle/kaggle.json

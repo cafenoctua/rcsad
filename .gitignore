@@ -168,3 +168,4 @@ kaggle.json
 conn-gcs.json
 .env
 *mlruns
+project/data/*
